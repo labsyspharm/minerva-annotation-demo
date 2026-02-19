@@ -2,7 +2,7 @@
 
 <html>
   <head>
-    <title>Minerva MITI Demo</title>
+    <title>Minerva 2.0 Demo</title>
     <meta charset="UTF-8" />
     <link rel="icon" href="images/favicon.png" />
     <meta http-equiv="Cache-control" content="no-cache" />
@@ -12,6 +12,29 @@
         height: 100vh;
         margin: 0;
       }
+      * {
+        --theme-font-family: "lato",sans-serif;
+        --theme-dark-main-color: hwb(240 10% 50%);
+        --theme-light-focus-color: hwb(45 90% 0%);
+        --theme-light-contrast-color: hwb(45 99% 0%);
+        --theme-dark-accept-color: hwb(170 5% 75%);
+        --theme-dark-reject-color: hwb(25 0% 75%);
+        --theme-dark-focus-color: hwb(45 0% 90%);
+        --theme-glass-edge: color-mix(in xyz, white 20%, transparent);
+        --theme-dark-gray-color: color-mix(in xyz, navy 2%, black);
+        --theme-glass-filter: blur(32px);
+        --theme-dim-gray-color: #111;
+        --theme-gap-tiny: 0.3em;
+        --radius-0001: 0 0 0 4px;
+        --dark-main-glass: 
+          color-mix(
+            in xyz, var(--theme-dark-main-color), transparent 20%
+          );
+        --dark-glass: 
+          color-mix(
+            in xyz, var(--theme-dim-gray-color), transparent 20%
+          );
+      }
     </style>
     <link
       rel="stylesheet"
@@ -19,11 +42,10 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
-    <script type="module" crossorigin src="/assets/index.4fdf2154.js"></script>
-    <link rel="stylesheet" href="/assets/index.72213d13.css">
+    <script type="module" crossorigin src="./assets/index-CdG-TGTt.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-BWgN9U1N.css">
   </head>
   <body>
-    
     <div id="react-output"></div>
   </body>
 </html>
